@@ -23,6 +23,13 @@
                 alert('Hello, ' + name + '!');
             });
         </script>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.querySelector('input[name="name"]').value;
+                alert('Hello, ' + name + '!');
+            });
+        </script>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = htmlspecialchars($_POST["name"]);
