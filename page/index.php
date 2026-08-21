@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Welcome to the index page! This is main</p>
+    
 </body>
 </html>
