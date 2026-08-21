@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="index.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = htmlspecialchars($_POST["name"]);
+        echo "<h1>Hello, $name!</h1>";
+    }
+    ?>
     
 </body>
 </html>
