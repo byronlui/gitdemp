@@ -10,6 +10,13 @@
         <input type="text" name="name" placeholder="Enter your name">
         <input type="submit" value="Submit">
     </form>
+    <Javascript>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.querySelector('input[name="name"]').value;
+            alert('Hello, ' + name + '!');
+        });    </Javascript>
+        
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = htmlspecialchars($_POST["name"]);
