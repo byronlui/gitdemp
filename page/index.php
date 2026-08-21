@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Welcome to the index page!</p>
     <form action="index.php" method="post">
         <input type="text" name="name" placeholder="Enter your name">
         <input type="submit" value="Submit">
